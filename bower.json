@@ -1,0 +1,10 @@
+{
+  "name": "teste",
+  "description": "landing page de carros",
+  "main": "index.js",
+  "authors": [
+    "nicholas lima"
+  ],
+  "license": "ISC",
+  "homepage": ""
+}

@@ -1,0 +1,29 @@
+.titulo{
+    color: red;
+    border-bottom: 1px dashed red;
+    text-transform: uppercase;
+    font-family: calibri;
+}
+
+.propaganda{
+    font-size: 17px;
+    width: 650px;
+    text-transform: capitalize;
+}
+
+.titulo-preto{
+    background-color: black;
+    border: 2px dashed red;
+    border-radius: 10px;
+    padding: 4px;
+    width: 220px;
+    color: red;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 82px;
+}
+
+.destaque-vermelho{
+    color:red;
+}

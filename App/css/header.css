@@ -1,0 +1,33 @@
+
+
+#formulario{
+    width: 320px;
+    background-color: black;
+    box-shadow: rgb(87, 85, 85) 0px 10px 10px;
+}
+
+#enviar{
+    margin-bottom: -35px;
+    width: 150px;
+    background-color:rgb(202, 17, 17);
+    box-shadow: rgb(63, 61, 61) 0px 10px 8px;
+    display: block;
+    font-size: 16px;
+}
+
+#logo1{
+    margin-left: 97px;
+}
+
+#logo2{
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px rgb(179, 174, 174);
+    padding: 10px;
+    margin-bottom: -20px;
+}
+
+.fundo{
+    background-image: url('../imgs/7g.jpg');
+    background-size: cover;
+    height: 500px;
+}
