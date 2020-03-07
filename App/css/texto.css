@@ -27,3 +27,20 @@
 .destaque-vermelho{
     color:red;
 }
+
+.mensagem{
+    position: fixed;
+    display: block;
+    bottom: 20px;
+    z-index: 1;
+    right: auto;
+    left: auto;
+    margin: auto auto;
+    width: 960px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: rgba(29, 29, 31, 350);
+    text-transform: capitalize;
+    text-size-adjust: 17px;
+}

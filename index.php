@@ -26,28 +26,27 @@
                 <div class="col-md-6">
                     <div class="p-3 rounded" id="formulario">
                     <h5 class="text-white upper-case mb-4 text-center text-uppercase">solicite já sua proposta</h5>
-                        <input type="text" class="form-control my-2" placeholder="Nome">
-                        <input type="text" class="form-control my-2" placeholder="E-mail">
-                        <input type="text" class="form-control my-2" placeholder="Fone">
+                        <input type="text" class="form-control my-2" placeholder="Nome" id="nome">
+                        <input type="text" class="form-control my-2" placeholder="E-mail" id="email">
+                        <input type="text" class="form-control my-2" placeholder="Fone" id="fone">
 
-                        <input type="text" class="form-control my-2" placeholder="cidade">
+                        <input type="text" class="form-control my-2" placeholder="cidade" id="cidade">
 
-                        <select name="estado" class="form-control my-2" placeholder="Estado">
-                            <option value="">rio de janeiro</option>
-                            <option value="">são paulo</option>
+                        <select  class="form-control my-2" placeholder="Estado" id="estado">>
+                            <option value="RJ">rio de janeiro</option>
+                            <option value="SP">são paulo</option>
                         </select>
 
-                        <select  name="modelo" class="form-control my-2" placeholder="Modelo do Carro">
-                            <option value="">civic</option>
-                            <option value="">crv</option>
+                        <select  class="form-control my-2" placeholder="Modelo do Carro" id="modelo">
+                            <option value="civic">civic</option>
+                            <option value="crv">crv</option>
                         </select>
 
-                        <input type="text" class="form-control my-2" placeholder="Horario para ligar">
-                        <textarea name="mensagem" id="" cols="30" rows="3" placeholder="mensagem" class="form-control my-1">
-                        </textarea>
+                        <input type="text" class="form-control my-2" placeholder="Horario para ligar" id="hora">
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="3" placeholder="mensagem" class="form-control my-1" ></textarea>
 
                         <div class="d-flex flex-row ">
-                            <input type="checkbox" class="form-control col-md-2">
+                            <input type="checkbox" class="form-control col-md-2" id="aceito">
                             <p class="text-white" class="col-md-10">li e aceito as politicas de privacidade</p> 
                         </div>
                         
@@ -96,10 +95,17 @@
                 </div>
                 
             </div>
-
+        <p class="mensagem text-center invisible">mensagem</p>
     </footer>
-</div>
+
+    
 </body>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="App/js/Model/Contato.js"></script>
+    <script src="App/js/View/mensagensView.js"></script>
+    <script src="App/js/Controllers/contatoController.js"></script>
+    
+    <script src="App/js/App.js"></script>
 </html>
