@@ -10,7 +10,7 @@ class contatoController{
         $.ajax({
             type: "post",
             data: this.contato,
-            url: "",
+            url: "App/php/App.php",
             beforeSend: function(){
                 msg.enviando();
             }
