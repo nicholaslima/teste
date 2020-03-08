@@ -14,7 +14,6 @@ $modelo = filter_input(INPUT_POST,'modelo',FILTER_SANITIZE_STRING);
 $hora = filter_input(INPUT_POST,'hora',FILTER_SANITIZE_STRING);
 $mensagem = filter_input(INPUT_POST,'mensagem',FILTER_SANITIZE_STRING);
 
-
 $contato = new Contato();
 
 $contato->setNome($nome);
@@ -26,7 +25,12 @@ $contato->setModelo($modelo);
 $contato->setHora($hora);
 $contato->setMensagem($mensagem);
 
+
 $controller = new contatoController($contato);
 
-$controller->cadastrar();
+try{
+    $controller->cadastrar();
+}catch(Exception $erro){
+    console.log($erro->getMessage());
+}
 

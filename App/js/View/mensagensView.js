@@ -8,13 +8,13 @@ class mensagensView{
     }
 
     visibilidade(){
-        
         this.mensagem.toggleClass("invisible");
         this.mensagem.toggleClass("visible");
     }
 
     enviado(){
         this.mensagem.text("contato enviado com sucesso");
+        this.tempoMsg();
     }
 
     enviando(){
@@ -25,5 +25,27 @@ class mensagensView{
 
     falha(){
         this.mensagem.text("falha no envio,tente novamente");
+        this.tempoMsg();
     }    
+
+    validacaoForm(mensagens){
+    
+        var string = `<ul>`;
+
+        for(var i = 0; i < mensagens.length;i++){
+            string += `<li>${mensagens[i]}</li>`;
+        }
+
+        string += `</ul>`;
+
+        this.visibilidade();
+        this.mensagem.html(string);
+        this.tempoMsg();
+    }
+
+    tempoMsg(){
+        setTimeout(() =>{
+            this.mensagem.addClass("invisible");
+        },5000);
+    }
 }

@@ -2,6 +2,8 @@
 
 
 $("#enviar").click( () => {
+   
+
     var nome = $("#nome").val();
     var email = $("#email").val();
     var fone = $("#fone").val();
@@ -16,6 +18,7 @@ $("#enviar").click( () => {
 
     const controller = new contatoController(contato);
 
-    controller.enviarDados();
+    controller.validar();
+
 });
 
