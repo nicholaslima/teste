@@ -27,7 +27,11 @@
 }
 
 .fundo{
-    background-image: url('../imgs/7g.jpg');
+    background-image: url('../imgs/2.jpg');
     background-size: cover;
-    height: 500px;
+    height: 400px;
+}
+
+#carro1{
+    padding-top: 200px;
 }

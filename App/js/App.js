@@ -12,13 +12,17 @@ $("#enviar").click( () => {
     var modelo = $("#modelo").val();
     var hora = $("#hora").val();
     var mensagem = $("#mensagem").val();
-    var aceito = $("#aceito").val();
+    var aceito = $("#aceito").is(':checked');
 
     const contato = new Contato(nome,email,fone,cidade,estado,modelo,hora,mensagem,aceito);
 
     const controller = new contatoController(contato);
 
-    controller.validar();
-
+    if(controller.validar()){
+        controller.enviarDados();
+    }else{
+        console.log('invalido');
+    }
+    
 });
 

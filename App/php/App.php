@@ -31,6 +31,6 @@ $controller = new contatoController($contato);
 try{
     $controller->cadastrar();
 }catch(Exception $erro){
-    console.log($erro->getMessage());
+    print($erro->getMessage());
 }
 

@@ -18,17 +18,17 @@
 
     <div class="fundo">
         <header class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="App/imgs/" alt="">
+            <div class="row carro">
+                <div class="col-md-6 col-sm-12">
+                    <img src="App/imgs/coy.png" id="carro1"alt="">
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                  <div class="p-3 rounded" id="formulario">
                     <h5 class="text-white upper-case mb-4 text-center text-uppercase">solicite já sua proposta</h5>
                         <input type="text" class="form-control my-2" placeholder="Nome" id="nome" >
                         <input type="text" class="form-control my-2" placeholder="E-mail" id="email" >
-                        <input type="text" class="form-control my-2" placeholder="Fone" id="fone" >
+                        <input type="text"  class="form-control my-2" id="fone" >
 
                         <input type="text" class="form-control my-2" placeholder="cidade" id="cidade" >
 
@@ -53,7 +53,7 @@
                         </div>
                         
 
-                        <button  class="btn rounded-pill mx-auto text-white text-capitalize" id="enviar">enviar<i class="fa fa-arrow-circle-right mx-2" aria-hidden="true"></i></button>                  
+                        <button  class="btn rounded-pill mx-auto text-white text-capitalize" id="enviar"><b class="texto-botao">enviar</b><i class="fa fa-arrow-circle-right mx-2" aria-hidden="true"></i></button>                  
                     </div>
                 </div>
             </div>
@@ -62,12 +62,12 @@
 
     <main class="container">
         <div class="row">
-           <h1 class="titulo col-md-7">novo honda cr-v</h1> 
+           <h1 class="titulo col-md-7"><b><i>novo honda cr-v</i></b></h1> 
            <img src="App/imgs/logo2.png" class="col-md-3" alt="logo honda" id="logo2">
         </div>
         
         <p class="propaganda">
-            nossos clientes elogiam nossa <spam class="destaque-vermelho">transparencia vontade de atender e paixao</spam> por honda. entre em contato e nods dê oportunidade de lhe atender como você merece! 
+            <b><i>nossos clientes elogiam nossa <spam class="destaque-vermelho">transparencia vontade de atender e paixao</spam> por honda. entre em contato e nods dê oportunidade de lhe atender como você merece!</i></b> 
         </p>
 
     </main>
@@ -82,12 +82,12 @@
                 </div>
 
                 <div>
-                    <img src="App/imgs/civic.png" alt="foto novo civic" class="foto">
+                    <img src="App/imgs/civic.png" alt="foto novo civic" class=" foto">
                     <p class="modelo-carro text-center">Novo Civic</p>
                 </div>
                 
                 <div>
-                    <img src="App/imgs/crv.png" alt="foto novo CR-V" class=" foto">
+                    <img src="App/imgs/crv.png" alt="foto novo CR-V" class="  foto">
                     <p class="modelo-carro text-center">Honda CR-V</p>
                 </div>
                 

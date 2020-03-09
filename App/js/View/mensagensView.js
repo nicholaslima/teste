@@ -13,7 +13,9 @@ class mensagensView{
     }
 
     enviado(){
-        this.mensagem.text("contato enviado com sucesso");
+        this.mensagem.text(`Contato enviado com sucesso`);
+        this.visibilidade();
+        console.log("enviado");
         this.tempoMsg();
     }
 

@@ -28,10 +28,20 @@ class contatoController{
 
         var mensagens = [];
 
-        this.validaEmail(mensagens);
-        this.validaCampoVazio(mensagens);
+        const validacaoEmail = this.validaEmail(mensagens);
+        const validacaoCampos = this.validaCampoVazio(mensagens);
+        const validacaoTelefone= this.validaTelefone(mensagens);
+        const validacaoTermos = this.validaTermos(mensagens);
         
         msg.validacaoForm(mensagens);
+
+        if(validacaoEmail == true &&
+            validacaoCampos == true &&
+            validacaoTelefone == true &&
+            validacaoTermos == true
+        ){
+            return true;
+        };
     }
 
     validaCampoVazio(mensagens){
@@ -42,27 +52,51 @@ class contatoController{
         }
         if(vazio === true){
              mensagens.push(`por favor,preencha todos campos!`);
+             return false;
+        }else{
+            return true;
         }
     }
 
     validaEmail(mensagens){
         const email = this.contato['email'];
-        const regex = /^[a-zA-Z]+.\w+.@.\w+[.].\w+/g;
+        const regex = /^[a-zA-Z]{0,}.\w+.@.\w+[.].\w+/g;
         const regexEspaco = /(?=\s{1,})/;
 
         var validacao = regex.test(email);
         var valido = email.match(regex);
         var espacamento = regexEspaco.test(email);
 
-        console.log(validacao);
-        console.log(espacamento);
-
         if(validacao === false || espacamento === true){
-             mensagens.push(`o email <span class="destaque-vermelho">${email}</span> não é um email valido`);    
-        };
+             mensagens.push(`o email <span class="destaque-vermelho">${email}</span> não é um email valido`);
+             return false;    
+        }else{
+            return true;
+        }
+        
     }
 
-    validatelefone(mensagens){
+    validaTelefone(mensagens){
+        const fone = this.contato['fone'];
         
+        var regex = /\d{9,11}/;
+        var tel = fone.match(regex);
+        var validacao = regex.test(fone);
+
+        if(validacao == false){
+            mensagens.push(`numero de telefone <span class="destaque-vermelho">${this.contato['fone']}</span> invalido,somente numeros`);
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    validaTermos(mensagens){
+        if(this.contato['aceito'] === false){
+            mensagens.push(`para continuar aceite os termos de politica de privacidade`);
+            return false;
+        }else{
+            return true;
+        }
     }
 }
