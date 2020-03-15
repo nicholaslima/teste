@@ -23,7 +23,9 @@
     border: 1px solid white;
     box-shadow: 5px 5px 5px rgb(179, 174, 174);
     padding: 10px;
-    margin-bottom: -20px;
+    margin-bottom: 50px;
+    width: 230px;
+
 }
 
 .fundo{
@@ -32,6 +34,3 @@
     height: 400px;
 }
 
-#carro1{
-    padding-top: 200px;
-}

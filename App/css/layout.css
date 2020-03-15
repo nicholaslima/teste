@@ -1,13 +1,76 @@
-main{
+
+.bloco-central{
+    width: 970px;
     margin-top: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
 }
 
-.fundo{
-    margin-bottom: 155px;
+.bloco-header{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
 }
 
+#carro1{
+    padding-top: 200px;
+    margin: 0 auto;
+}
 
 .fotos{
-    display: block;
-    width: 750px;
+    width: 80%;
 }
+
+.mensagem{
+    width: 80%;
+}
+
+@media screen and (max-width: 980px) {
+    #formulario{
+        margin: 0 auto;
+        width: 80%;
+        order: 1;
+    }
+    #carro1{
+        order: 2;
+        padding-top: 50px;
+        width: auto;
+    }
+    .bloco-header{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .bloco-central{
+        display: flex;
+        flex-direction: column;
+        margin-top: 580px;
+        width: 90%;
+    }
+    .texto-propaganda{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #logo1{
+        margin: 0 auto;
+    }
+
+    .bloco-propaganda{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    body{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+

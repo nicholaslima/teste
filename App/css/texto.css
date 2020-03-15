@@ -47,3 +47,9 @@
 .texto-botao{
     font-size: 17px;
 }
+
+
+.texto-propaganda{
+    font-weight: bold;
+    font-style: italic;
+}

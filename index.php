@@ -18,28 +18,27 @@
 
     <div class="fundo">
         <header class="container">
-            <div class="row carro">
-                <div class="col-md-6 col-sm-12">
-                    <img src="App/imgs/coy.png" id="carro1"alt="">
-                </div>
+            <div class="bloco-header">
                 
-                <div class="col-md-6 col-sm-12">
+                <img src="App/imgs/coy.png" id="carro1" class="img-fluid">
+               
+    
                  <div class="p-3 rounded" id="formulario">
                     <h5 class="text-white upper-case mb-4 text-center text-uppercase">solicite já sua proposta</h5>
                         <input type="text" class="form-control my-2" placeholder="Nome" id="nome" >
                         <input type="text" class="form-control my-2" placeholder="E-mail" id="email" >
-                        <input type="text"  class="form-control my-2" id="fone" >
+                        <input type="text"  class="form-control my-2" id="fone" placeholder="telefone">
 
                         <input type="text" class="form-control my-2" placeholder="cidade" id="cidade" >
 
                         <select  class="form-control my-2" placeholder="Estado" id="estado" >
-                            <option value=""></option>
+                            <option value="">estado</option>
                             <option value="RJ">rio de janeiro</option>
                             <option value="SP">são paulo</option>
                         </select>
 
                         <select  class="form-control my-2" placeholder="Modelo do Carro" id="modelo" >
-                            <option value=""></option>
+                            <option value="carro">modelo do carro</option>
                             <option value="civic">civic</option>
                             <option value="crv">crv</option>
                         </select>
@@ -55,21 +54,24 @@
 
                         <button  class="btn rounded-pill mx-auto text-white text-capitalize" id="enviar"><b class="texto-botao">enviar</b><i class="fa fa-arrow-circle-right mx-2" aria-hidden="true"></i></button>                  
                     </div>
-                </div>
+           
             </div>
         </header>
-</div>
+    </div>
 
     <main class="container">
-        <div class="row">
-           <h1 class="titulo col-md-7"><b><i>novo honda cr-v</i></b></h1> 
-           <img src="App/imgs/logo2.png" class="col-md-3" alt="logo honda" id="logo2">
-        </div>
-        
-        <p class="propaganda">
-            <b><i>nossos clientes elogiam nossa <spam class="destaque-vermelho">transparencia vontade de atender e paixao</spam> por honda. entre em contato e nods dê oportunidade de lhe atender como você merece!</i></b> 
-        </p>
+        <div class="d-flex justify-content-between flex-column ">
 
+                <div class="bloco-central">
+                    <div class="bloco-propaganda">
+                        <h1 class="titulo flex-fill"><b><i>novo honda cr-v</i></b></h1> 
+                        <p class="texto-propaganda">nossos clientes elogiam nossa <spam class="destaque-vermelho">transparência vontade de atender e paixão</spam> pela honda. entre em contato e nos dê oportunidade de lhe atender como você merece!</p>
+                    </div>
+                    
+                    <img src="App/imgs/logo2.png" class="" alt="logo honda" id="logo2">
+                </div>
+                
+        </div>
     </main>
 
     <footer class="container my-5">
@@ -77,22 +79,22 @@
             <div class="titulo-preto">outros modelos</div>
             <div class="d-flex flex-row justify-content-around fotos mx-auto">
                 <div>
-                    <img src="App/imgs/fit.png" alt="foto novo fit" class=" foto">
+                    <img src="App/imgs/fit.png" alt="foto novo fit" class="img-fluid foto">
                     <p class="modelo-carro text-center">Novo Fit</p>
                 </div>
 
                 <div>
-                    <img src="App/imgs/civic.png" alt="foto novo civic" class=" foto">
+                    <img src="App/imgs/civic.png" alt="foto novo civic" class="img-fluid foto">
                     <p class="modelo-carro text-center">Novo Civic</p>
                 </div>
                 
                 <div>
-                    <img src="App/imgs/crv.png" alt="foto novo CR-V" class="  foto">
+                    <img src="App/imgs/crv.png" alt="foto novo CR-V" class="img-fluid  foto">
                     <p class="modelo-carro text-center">Honda CR-V</p>
                 </div>
                 
                 <div>
-                    <img src="App/imgs/city.png" alt="foto novo fit" class=" foto">
+                    <img src="App/imgs/city.png" alt="foto novo fit" class="img-fluid foto">
                     <p class="modelo-carro text-center">Honda City</p>
                 </div>
                 
